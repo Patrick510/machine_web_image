@@ -6,13 +6,14 @@
 PS C:\dev\machine> git branch -M main
 PS C:\dev\machine> python -m venv .env
 PS C:\dev\machine> .\.env\Scripts\Activate.ps1
+(.env) PS C:\dev\machine> 
 ```
 
 
 ### AJUSTANDO CONFIGURAÇÃO DE SEGURANÇA
 
 ```
-PS C:\Windows\system32> Set-ExecutionPolicy Restricted
+PS C:\Windows\system32> Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 Alteração da Política de Execução
 A política de execução ajuda a proteger contra scripts não confiáveis. A alteração da política de execução pode
 implicar exposição aos riscos de segurança descritos no tópico da ajuda about_Execution_Policies em
